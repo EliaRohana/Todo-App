@@ -39,4 +39,19 @@ public class Service {
   public void save(User user){
     userRepository.save(user);
   }
+
+  public void createDummyData(){
+    Todo todo = new Todo();
+    User user = new User();
+    user.setName("elia");
+    todo.setUser(user);
+    user.addTodo(todo);
+
+
+    todo.setUser(user);
+    todo.setSummary("This is a test");
+    todo.setDescription("This is a test");
+//
+    save(todo);
+  }
 }

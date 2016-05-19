@@ -75,7 +75,7 @@ public class AppConfig  {
     lemfb.setLoadTimeWeaver(new InstrumentationLoadTimeWeaver());
     HashMap properties = new HashMap(4);
     properties.put("eclipselink.weaving", "static");
-    properties.put(PersistenceUnitProperties.DDL_GENERATION, PersistenceUnitProperties.NONE);
+    properties.put(PersistenceUnitProperties.DDL_GENERATION, PersistenceUnitProperties.DROP_AND_CREATE);
     properties.put(PersistenceUnitProperties.DDL_GENERATION_MODE, PersistenceUnitProperties.DDL_BOTH_GENERATION);
     properties.put(PersistenceUnitProperties.CREATE_JDBC_DDL_FILE, "create.sql");
     lemfb.setJpaPropertyMap(properties);

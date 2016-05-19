@@ -26,18 +26,7 @@ public class Main {
 //
 
 
-      Todo todo = new Todo();
-      User user = new User();
-      user.setName("elia");
-      todo.setUser(user);
-      user.addTodo(todo);
-
-
-      todo.setUser(user);
-      todo.setSummary("This is a test");
-      todo.setDescription("This is a test");
-//
-      service.save(todo);
+    service.createDummyData();
 
     List<Todo> todoList = service.getTodoList();
     for (Todo td : todoList) {
