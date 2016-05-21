@@ -18,6 +18,6 @@ import java.util.List;
 public interface TodoRepository extends CrudRepository<Todo, Integer> {
 
 //  public Todo findByTodoId(Integer id);
-  List<Todo> findByDescription(String Summary);
+  List<Todo> findByDescription(String desc);
 
 }
