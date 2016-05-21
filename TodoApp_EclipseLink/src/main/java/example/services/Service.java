@@ -12,7 +12,6 @@ import main.java.example.model.User;
 import main.java.example.repos.TodoRepository;
 import main.java.example.repos.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;

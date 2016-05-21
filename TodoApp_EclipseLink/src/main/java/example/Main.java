@@ -1,9 +1,7 @@
 package main.java.example;
 
 import main.java.example.model.Todo;
-import main.java.example.model.User;
 import main.java.example.services.Service;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.naming.NamingException;

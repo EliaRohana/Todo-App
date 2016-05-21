@@ -8,7 +8,6 @@
 package main.java.example.repos;
 
 import main.java.example.model.Todo;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
