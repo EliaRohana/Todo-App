@@ -33,10 +33,6 @@ public class ServiceTest extends AbstractTestExecutionListener {
     service.createDummyData();
   }
 
-//  @Override
-//  public void afterTestClass(TestContext testContext) {
-//  }
-
   @Test
   public void testGetTodoList() throws Exception {
     assertNotNull(service.getTodoList());

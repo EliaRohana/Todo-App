@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<entity-mappings
+        xmlns="http://www.eclipse.org/eclipselink/xsds/persistence/orm"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.eclipse.org/eclipselink/xsds/persistence/orm http://www.eclipse.org/eclipselink/xsds/eclipselink_orm_2_1.xsd"
+        version="2.1">
+
+    <sql-result-set-mapping name="userTodoDetail">
+        <constructor-result target-class="main.java.example.model.UserToTodoDesc">
+            <column name="name"/>
+            <column name="description"/>
+            <column name="summary"/>
+        </constructor-result>
+    </sql-result-set-mapping>
+    <named-native-query name="userTodoDetailQuery" result-set-mapping="userTodoDetail">
+        <query>select u.name,t.description, t.summary from t_user u join todo t on u.id = t.user_id</query>
+    </named-native-query>
+</entity-mappings>
