@@ -39,13 +39,4 @@ public class ServiceTest extends AbstractTestExecutionListener {
 
   }
 
-  @Test
-  public void testSave() throws Exception {
-
-  }
-
-  @Test
-  public void testSave1() throws Exception {
-
-  }
 }
