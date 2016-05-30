@@ -20,4 +20,6 @@ public interface TodoRepository extends JpaRepository<Todo, Integer> {
 //  public Todo findByTodoId(Integer id);
   List<Todo> findByDescription(String desc);
 
+  List<Todo> findByUser_Id(long userId);
+
 }
